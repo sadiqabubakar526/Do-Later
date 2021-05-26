@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #272b3a;
+}
+
+.App {
+  margin: auto;
+  width: 90%;
+  max-width: 34pc;
+  height: 100%;
+}
+
+.branding-name {
+  color: #528dff;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.task-input {
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #33384a;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.task-input input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 17px;
+  color: #fff;
+}
+
+.task-input input::placeholder {
+  color: #272b3a;
+}
+
+.tasks-container {
+  padding: 17px 0;
+}
+
+.add-btn,
+.drag-handle,
+.edit-task {
+  color: #528dff;
+  cursor: pointer;
+}
+
+.task {
+  margin: 0 auto;
+  margin-bottom: 17px;
+  width: 100%;
+  padding: 20px;
+  background-color: #33384a;
+  border-radius: 20px;
+  cursor: pointer;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: auto 1fr auto auto;
+}
+
+.task span svg {
+  margin: auto 0;
+  display: flex;
+}
+
+.text-task {
+  color: #fff;
+  font-size: 17px;
+  background: none;
+  outline: none;
+  border: none;
+  resize: none;
+  height: fit-content;
+}
+
+.delete-task {
+  color: #ff5656;
+  cursor: pointer;
+}
